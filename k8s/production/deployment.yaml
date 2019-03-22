@@ -37,7 +37,7 @@ spec:
           - name: GOOGLE_APPLICATION_CREDENTIALS
             value: /opt/query/storage.json
           - name: BUCKET_FREEZE
-            value: query-freeze
+            value: skydipper-query-freeze
           - name: CT_URL
             valueFrom:
                 secretKeyRef:
