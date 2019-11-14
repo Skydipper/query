@@ -65,7 +65,8 @@ class QueryRouter {
         if (!ctx.query.freeze || ctx.query.freeze !== 'true') {
             const req = request(options);
             req.on('response', (response) => {
-                console.log("response---", response);
+                console.log("response--- body", response.body);
+                console.log("response--- text", response.text);
                 ctx.response.status = response.statusCode;
                 ctx.set(getHeadersFromResponse(response));
             });
