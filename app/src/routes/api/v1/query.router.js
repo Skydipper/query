@@ -68,6 +68,8 @@ class QueryRouter {
                 ctx.response.status = response.statusCode;
                 ctx.set(getHeadersFromResponse(response));
             });
+
+            req.on('error', err => console.log('errror---', err));
             ctx.body = req.on('error', ctx.onerror).pipe(passThrough());
         } else {
             let { loggedUser } = ctx.request.body;
