@@ -1,6 +1,6 @@
 {
 	"name": "#(service.name)",
-	"tags": ["gfw", "rw"],
+	"tags": ["skydipper"],
 	"endpoints": [{
 		"path": "/v1/query",
 		"method": "GET",
