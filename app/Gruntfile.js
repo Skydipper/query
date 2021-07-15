@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                     all: true
                 },
                 cmd: false,
-                args: ['grunt', '--gruntfile', 'app/Gruntfile.js', 'mochaTest:e2e']
+                args: ['grunt', '--gruntfile', 'app/Gruntfile.js', 'mochaTest:e2e', ]
             }
         }
     });
