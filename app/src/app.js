@@ -1,11 +1,11 @@
 const Koa = require('koa');
-const logger = require('logger');
+const logger = require('./logger');
 const koaLogger = require('koa-logger');
 const config = require('config');
-const loader = require('loader');
+const loader = require('./loader');
 const convert = require('koa-convert');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
-const ErrorSerializer = require('serializers/error.serializer');
+const ErrorSerializer = require('./serializers/error.serializer');
 
 const koaBody = require('koa-body')({
     multipart: true,

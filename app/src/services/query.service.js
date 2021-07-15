@@ -1,11 +1,11 @@
-const logger = require('logger');
+const logger = require('../logger');
 
 const Sql2json = require('sql2json').sql2json;
 const Json2sql = require('sql2json').json2sql;
 const ctRegisterMicroservice = require('ct-register-microservice-node');
 const JSONAPIDeserializer = require('jsonapi-serializer').Deserializer;
-const ValidationError = require('errors/validation.error');
-const endpoints = require('services/endpoints');
+const ValidationError = require('../errors/validation.error');
+const endpoints = require('../services/endpoints');
 
 const deserializer = (obj) =>
     new Promise((resolve, reject) => {
